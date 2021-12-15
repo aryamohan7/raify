@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vettal =[12,14,13]
+        var hamilton =[10,16,13,12]
+        var result =[] , res_vettal ="",res_hamilton=""
+
+        for(i=0;i<=vettal.length;i++){
+            for(j=0;j<hamilton.length;j++){
+                if(vettal[i]>hamilton[i])
+                {
+                    res_vettal = res_vettal+10
+                    res_hamilton = res_hamilton-2
+
+                    result.push(res_vettal,res_hamilton)
+                }
+                else{
+                    res_hamilton = res_hamilton+10
+                    res_vettal = res_vettal-2
+                    result.push(res_vettal,res_hamilton)
+
+                }
+               
+            }
+              
+        }
+        document.write(result)
+        
+
+
+    </script>
+</body>
+</html>
